@@ -664,41 +664,6 @@ footer {
     }
 }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.chain-item:nth-child(1) {
-    transition-delay: 0.1s;
-}
-
-.chain-arrow:nth-of-type(1) {
-    transition-delay: 0.3s;
-}
-
-.chain-item:nth-child(3) {
-    transition-delay: 0.5s;
-}
-
-.chain-arrow:nth-of-type(2) {
-    transition-delay: 0.7s;
-}
-
-.chain-item:nth-child(5) {
-    transition-delay: 0.9s;
-}
-
-.why-block {
-    transition-delay: 1.2s;
-}
-
 /* Адаптивность */
 @media screen and (max-width: 992px) {
     .hero h2 {
@@ -901,17 +866,21 @@ footer {
     margin-bottom: 20px;
 }
 
-.chain-arrow {
-    font-size: 2rem;
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-}
-
-.chain-arrow i {
-    transition: transform 0.3s ease;
+/* Медиа-запрос для мобильной версии */
+@media screen and (max-width: 768px) {
+    .chain-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .chain-arrow {
+        display: none !important;
+    }
+    
+    .chain-item {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .examples {
@@ -965,19 +934,47 @@ footer {
         align-items: center;
     }
     
-    .chain-arrow {
-        transform: rotate(90deg);
-        margin: 20px 0;
-        height: 40px;
-    }
-    
     .chain-item {
         width: 100%;
         max-width: 100%;
     }
-    
-    /* Корректируем иконки в стрелках для мобильных устройств */
-    .chain-arrow .fas {
-        transform: rotate(90deg);
-    }
+}
+
+/* Анимация при прокрутке */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.4s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.chain-item:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.chain-item:nth-child(3) {
+    transition-delay: 0.15s;
+}
+
+.chain-item:nth-child(5) {
+    transition-delay: 0.25s;
+}
+
+.why-block {
+    transition-delay: 0.3s;
+}
+
+/* Стили для стрелок */
+.chain-arrow {
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--primary-color);
+    width: 50px;
+    text-align: center;
+    transform: rotate(0);
+    transition: none !important;
 }
