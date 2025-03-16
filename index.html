@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarRehab - Возвращение к себе через осознанность и терапию</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Кнопка "Вернуться наверх" -->
+    <button id="back-to-top" title="Вернуться наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Шапка сайта -->
+    <header id="home">
+        <div class="container">
+            <div class="logo">
+                <h1>StarRehab</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#self-awareness">Как разобраться в себе</a></li>
+                    <li><a href="#problems">Проблемы</a></li>
+                    <li><a href="#approaches">Подходы в терапии</a></li>
+                    <li><a href="#stages">Этапы реабилитации</a></li>
+                    <li><a href="#tasks">Практические задания</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <span class="slider"></span>
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Вступительный раздел -->
+    <section class="hero">
+        <div class="container">
+            <h2>Реабилитация и психотерапия звездных пациентов</h2>
+            <p>Профессиональный подход к уникальным проблемам известных личностей</p>
+        </div>
+    </section>
+
+    <!-- Раздел "Проблемы" -->
+    <section id="problems" class="section">
+        <div class="container">
+            <h2 class="section-title">Проблемы звездных пациентов</h2>
+            <div class="cards-container">
+                <div class="card reveal">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Испытание славой</h3>
+                            <i class="fas fa-star icon"></i>
+                        </div>
+                        <div class="card-back">
+                            <p>Вседозволенность, стресс, искушения, страх неудачи, зависимость от поклонников.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Плотный график</h3>
+                            <i class="fas fa-calendar-alt icon"></i>
+                        </div>
+                        <div class="card-back">
+                            <p>Постоянный стресс и использование допинга для поддержания темпа.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Жизнь на виду</h3>
+                            <i class="fas fa-eye icon"></i>
+                        </div>
+                        <div class="card-back">
+                            <p>Дополнительный стресс от публичности и постоянного внимания.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Потеря идентичности</h3>
+                            <i class="fas fa-id-badge icon"></i>
+                        </div>
+                        <div class="card-back">
+                            <p>Подмена реального «Я» публичным образом, созданным медиа.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Профессиональное выгорание</h3>
+                            <i class="fas fa-fire icon"></i>
+                        </div>
+                        <div class="card-back">
+                            <p>Эмоциональное истощение, потеря мотивации.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Финансовая неграмотность</h3>
+                            <i class="fas fa-coins icon"></i>
+                        </div>
+                        <div class="card-back">
+                            <p>Неспособность управлять деньгами, финансовые проблемы.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Токсичное окружение</h3>
+                            <i class="fas fa-users-slash icon"></i>
+                        </div>
+                        <div class="card-back">
+                            <p>Манипуляции, вредные привычки, использование знаменитости окружением.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Разрыв с реальностью</h3>
+                            <i class="fas fa-unlink icon"></i>
+                        </div>
+                        <div class="card-back">
+                            <p>Невозможность адаптироваться к жизни вне сцены.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Подходы в терапии" -->
+    <section id="approaches" class="section">
+        <div class="container">
+            <h2 class="section-title">Подходы к терапии звездных пациентов</h2>
+            
+            <div class="therapy-blocks">
+                <!-- КПТ -->
+                <div class="therapy-block reveal">
+                    <h3><i class="fas fa-brain"></i> Когнитивно-поведенческая терапия (КПТ)</h3>
+                    <div class="therapy-content">
+                        <p><strong>Суть:</strong> Работа с негативными мыслями, убеждениями и поведенческими паттернами.</p>
+                        <p><strong>Причина применения для звёзд:</strong> Эффективна при работе с искажёнными представлениями о себе, связанными с публичным образом.</p>
+                        <p><strong>Техники:</strong> Когнитивное реструктурирование, поведенческие эксперименты, анализ выгод и потерь, работа с автоматическими мыслями.</p>
+                    </div>
+                </div>
+
+                <!-- ДПТ -->
+                <div class="therapy-block reveal">
+                    <h3><i class="fas fa-balance-scale"></i> Диалектическая поведенческая терапия (ДПТ)</h3>
+                    <div class="therapy-content">
+                        <p><strong>Суть:</strong> Работа с эмоциональной регуляцией и межличностной эффективностью.</p>
+                        <p><strong>Причина применения для звёзд:</strong> Помогает справляться с интенсивными эмоциями и строить здоровые отношения.</p>
+                        <p><strong>Техники:</strong> Осознанность, толерантность к дистрессу, регуляция эмоций, навыки межличностной эффективности.</p>
+                    </div>
+                </div>
+
+                <!-- Схематерапия -->
+                <div class="therapy-block reveal">
+                    <h3><i class="fas fa-sitemap"></i> Схематерапия</h3>
+                    <div class="therapy-content">
+                        <p><strong>Суть:</strong> Работа с ранними дезадаптивными схемами и режимами личности.</p>
+                        <p><strong>Причина применения для звёзд:</strong> Эффективна при работе с глубинными причинами зависимостей и саморазрушительного поведения.</p>
+                        <p><strong>Техники:</strong> Режимная работа, эмпатическая конфронтация, imagery rescripting, работа с внутренним ребёнком.</p>
+                    </div>
+                </div>
+
+                <!-- Психоанализ -->
+                <div class="therapy-block reveal">
+                    <h3><i class="fas fa-couch"></i> Психоанализ (психодинамическая терапия)</h3>
+                    <div class="therapy-content">
+                        <p><strong>Суть:</strong> Исследование бессознательных процессов, детских травм и конфликтов.</p>
+                        <p><strong>Причина применения для звёзд:</strong> Позволяет проработать глубинные причины зависимости от внимания и признания.</p>
+                        <p><strong>Техники:</strong> Свободные ассоциации, анализ сновидений, перенос и контрперенос, проработка сопротивлений.</p>
+                    </div>
+                </div>
+
+                <!-- Экзистенциальная терапия -->
+                <div class="therapy-block reveal">
+                    <h3><i class="fas fa-seedling"></i> Экзистенциальная терапия</h3>
+                    <div class="therapy-content">
+                        <p><strong>Суть:</strong> Работа с экзистенциальными вопросами: смысл, свобода, ответственность, изоляция, смертность.</p>
+                        <p><strong>Причина применения для звёзд:</strong> Помогает найти смысл за пределами славы и построить аутентичную идентичность.</p>
+                        <p><strong>Техники:</strong> Экзистенциальный анализ, работа с ценностями, исследование свободы и ответственности.</p>
+                    </div>
+                </div>
+
+                <!-- Групповая терапия -->
+                <div class="therapy-block reveal">
+                    <h3><i class="fas fa-users"></i> Групповая терапия (12 шагов)</h3>
+                    <div class="therapy-content">
+                        <p><strong>Суть:</strong> Работа в группе с признанием проблемы и систематическим продвижением по шагам выздоровления.</p>
+                        <p><strong>Причина применения для звёзд:</strong> Снижает чувство исключительности, создаёт опыт равенства и принятия.</p>
+                        <p><strong>Техники:</strong> Признание бессилия перед зависимостью, инвентаризация, возмещение ущерба, самоанализ, помощь другим.</p>
+                    </div>
+                </div>
+
+                <!-- Телесно-ориентированная терапия -->
+                <div class="therapy-block reveal">
+                    <h3><i class="fas fa-walking"></i> Телесно-ориентированная терапия</h3>
+                    <div class="therapy-content">
+                        <p><strong>Суть:</strong> Работа с телом для доступа к эмоциям и освобождения от физических блоков.</p>
+                        <p><strong>Причина применения для звёзд:</strong> Помогает восстановить контакт с телом, часто нарушенный из-за перфекционизма и объективации.</p>
+                        <p><strong>Техники:</strong> Биоэнергетика, танцевально-двигательная терапия, техники заземления, дыхательные практики.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Типы реабилитационных центров -->
+            <h3 class="subsection-title">Типы реабилитационных центров</h3>
+            <div class="rehab-centers">
+                <div class="rehab-center reveal">
+                    <h4><i class="fas fa-gem"></i> Элитные «звёздные» клиники</h4>
+                    <p>Люксовые условия, индивидуальный подход, отсутствие контакта с другими пациентами.</p>
+                    <p class="cons"><strong>Минусы:</strong> Сохраняется иллюзия избранности, слабая терапевтическая эффективность.</p>
+                </div>
+                <div class="rehab-center reveal">
+                    <h4><i class="fas fa-hands-helping"></i> Классические терапевтические сообщества</h4>
+                    <p>Равные условия, работа в группе, отказ от привилегий и иллюзий.</p>
+                    <p class="pros"><strong>Плюсы:</strong> Высокая терапевтическая эффективность благодаря искренности и равенству.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Этапы реабилитации" -->
+    <section id="stages" class="section">
+        <div class="container">
+            <h2 class="section-title">Продуктивные этапы реабилитации</h2>
+            <div class="stages-container">
+                <div class="stage reveal">
+                    <div class="stage-number">1</div>
+                    <div class="stage-content">
+                        <h3>Детоксикация</h3>
+                        <p>Медицинское сопровождение в процессе очищения организма от психоактивных веществ.</p>
+                    </div>
+                </div>
+                <div class="stage reveal">
+                    <div class="stage-number">2</div>
+                    <div class="stage-content">
+                        <h3>Индивидуальная терапия</h3>
+                        <p>Глубинная работа с личными травмами, убеждениями и причинами зависимости.</p>
+                    </div>
+                </div>
+                <div class="stage reveal">
+                    <div class="stage-number">3</div>
+                    <div class="stage-content">
+                        <h3>Групповая терапия</h3>
+                        <p>Взаимодействие с другими пациентами, получение и дача обратной связи, развитие эмпатии.</p>
+                    </div>
+                </div>
+                <div class="stage reveal">
+                    <div class="stage-number">4</div>
+                    <div class="stage-content">
+                        <h3>Работа с эмоциональной регуляцией</h3>
+                        <p>Обучение техникам управления эмоциями без использования психоактивных веществ.</p>
+                    </div>
+                </div>
+                <div class="stage reveal">
+                    <div class="stage-number">5</div>
+                    <div class="stage-content">
+                        <h3>Формирование новых ценностей</h3>
+                        <p>Поиск смысла и значимости за пределами публичного образа и славы.</p>
+                    </div>
+                </div>
+                <div class="stage reveal">
+                    <div class="stage-number">6</div>
+                    <div class="stage-content">
+                        <h3>Работа с окружением</h3>
+                        <p>Анализ социальных связей, выявление токсичных отношений, реконструкция здорового окружения.</p>
+                    </div>
+                </div>
+                <div class="stage reveal">
+                    <div class="stage-number">7</div>
+                    <div class="stage-content">
+                        <h3>Стратегия возвращения в публичную жизнь</h3>
+                        <p>Подготовка к возвращению к работе с новыми навыками и границами.</p>
+                    </div>
+                </div>
+                <div class="stage reveal">
+                    <div class="stage-number">8</div>
+                    <div class="stage-content">
+                        <h3>Постреабилитационное сопровождение</h3>
+                        <p>Долгосрочная поддержка для предотвращения рецидивов и закрепления результатов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Практические задания" -->
+    <section id="tasks" class="section">
+        <div class="container">
+            <h2 class="section-title">Практические задания для звёздных пациентов</h2>
+            <div class="tasks-container">
+                <div class="task reveal">
+                    <div class="task-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="task-content">
+                        <h3>Дневник эмоций</h3>
+                        <p>Ежедневная фиксация и анализ эмоциональных состояний, выявление триггеров и работа с ними.</p>
+                    </div>
+                </div>
+                <div class="task reveal">
+                    <div class="task-icon">
+                        <i class="fas fa-user-slash"></i>
+                    </div>
+                    <div class="task-content">
+                        <h3>Разбор токсичного окружения</h3>
+                        <p>Анализ отношений, выявление манипуляций и созависимых связей, реструктуризация социального круга.</p>
+                    </div>
+                </div>
+                <div class="task reveal">
+                    <div class="task-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="task-content">
+                        <h3>Практики осознанности и медитации</h3>
+                        <p>Регулярные медитативные практики для развития внимательности к настоящему моменту.</p>
+                    </div>
+                </div>
+                <div class="task reveal">
+                    <div class="task-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="task-content">
+                        <h3>Сценарий возвращения в профессию</h3>
+                        <p>Создание детального плана возвращения к работе с учётом новых границ и приоритетов.</p>
+                    </div>
+                </div>
+                <div class="task reveal">
+                    <div class="task-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="task-content">
+                        <h3>Поиск смысла за пределами славы</h3>
+                        <p>Исследование новых областей интересов и самореализации, не связанных с публичностью и славой.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>StarRehab</h3>
+                    <p>Возвращение к себе через осознанность и терапию</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#self-awareness">Как разобраться в себе</a></li>
+                        <li><a href="#problems">Проблемы</a></li>
+                        <li><a href="#approaches">Подходы в терапии</a></li>
+                        <li><a href="#stages">Этапы реабилитации</a></li>
+                        <li><a href="#tasks">Практические задания</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StarRehab. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
