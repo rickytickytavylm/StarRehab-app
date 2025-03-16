@@ -907,6 +907,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.chain-arrow i {
+    transition: transform 0.3s ease;
 }
 
 .examples {
@@ -962,11 +967,17 @@ footer {
     
     .chain-arrow {
         transform: rotate(90deg);
-        margin: 10px 0;
+        margin: 20px 0;
+        height: 40px;
     }
     
     .chain-item {
         width: 100%;
         max-width: 100%;
+    }
+    
+    /* Корректируем иконки в стрелках для мобильных устройств */
+    .chain-arrow .fas {
+        transform: rotate(90deg);
     }
 }

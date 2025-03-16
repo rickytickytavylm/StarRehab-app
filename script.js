@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     <!-- Стрелка -->
                     <div class="chain-arrow reveal">
-                        <i class="fas fa-long-arrow-alt-right"></i>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                     
                     <!-- Блок "Чувства" -->
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     <!-- Стрелка -->
                     <div class="chain-arrow reveal">
-                        <i class="fas fa-long-arrow-alt-right"></i>
+                        <i class="fas fa-arrow-right"></i>
                     </div>
                     
                     <!-- Блок "Действия" -->
